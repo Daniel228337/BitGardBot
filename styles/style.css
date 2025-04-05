@@ -1,7 +1,13 @@
 @import url('./font.css');
+@import url('./grid.css');
+@import url('./media.css');
 
 
 :root {
+    --color-yellow: #FEB113;
+    --color-white: #FFFFFF;
+    --color-black: #000000;
+    --color-text: #001A49;
 }
 
 /* *_______________MAIN STYLES_______________* */
@@ -21,37 +27,33 @@ body {
   margin: 0;
   font-family: 'Circe', serif;
   font-weight: 400;
-  color: black;
+  color: var(--color-black);
   font-size: 17px;
   line-height: 1.41;
 }
 
 h1 {
   margin: 0;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 45px;
-  line-height: 1.18;
+  line-height: 1.1;
+  color: var(--color-white);
 }
 
 h2 {
-  line-height: 1.22;
+  line-height: 1.06;
   margin: 0;
-  font-weight: 600;
-  font-size: 36px;
+  font-weight: 700;
+  font-size: 37px;
+  color: var(--color-text);
 }
 
 h3 {
-  line-height: 1.28;
   margin: 0;
-  font-weight: 700;
-  font-size: 28px;
 }
 
 h4 {
   margin: 0;
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 1.4;
 }
 
 img {
@@ -67,17 +69,83 @@ a {
   color: black;
 }
 
-button {
+.btn {
   all: unset;
   cursor: pointer;
   box-sizing: border-box;
-  font-size: 16px;
+  font-size: 17px;
   text-align: center;
+  font-weight: 700;
+  line-height: 1.17;
+  color: var(--color-white);
+  padding: 12px 33px;
+  border-radius: 4px;
+  background: var(--color-yellow);
 }
 
 .container {
-  max-width: 1152px;
+  max-width: 1212px;
   width: 100%;
   margin: 0 auto;
   padding: 0 16px;
+}
+
+/* *_______________header_______________* */
+.header {
+  position: relative;
+  overflow: visible;
+  padding: 20px;
+  color: var(--color-white);
+  text-align: center;
+}
+
+.header a {
+  max-width: 100%;
+}
+
+.image-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 742px;
+  z-index: -1;
+  pointer-events: none; 
+}
+
+.hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.header_nav {
+  display: inline-flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.header_nav a {
+  color: var(--color-white);
+  font-weight: 700;
+  font-size: 17px;
+  height: 1.17;
+}
+
+/* *_______________greating_______________* */
+
+.greating {
+  color: var(--color-white);
+  padding-top: 174px;
+  padding-bottom: 240px;
+}
+
+.greating_title h1 {
+  margin-bottom: 5px;
+}
+
+.greating_title p {
+  font-size: 25px;
+  line-height: 1.44;
+  margin-bottom: 34px;
 }
