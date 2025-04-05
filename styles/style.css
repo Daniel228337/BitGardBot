@@ -1,0 +1,83 @@
+@import url('./font.css');
+
+
+:root {
+}
+
+/* *_______________MAIN STYLES_______________* */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+ul, li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: 'Circe', serif;
+  font-weight: 400;
+  color: black;
+  font-size: 17px;
+  line-height: 1.41;
+}
+
+h1 {
+  margin: 0;
+  font-weight: 600;
+  font-size: 45px;
+  line-height: 1.18;
+}
+
+h2 {
+  line-height: 1.22;
+  margin: 0;
+  font-weight: 600;
+  font-size: 36px;
+}
+
+h3 {
+  line-height: 1.28;
+  margin: 0;
+  font-weight: 700;
+  font-size: 28px;
+}
+
+h4 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+img {
+  max-width: 100%;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+button {
+  all: unset;
+  cursor: pointer;
+  box-sizing: border-box;
+  font-size: 16px;
+  text-align: center;
+}
+
+.container {
+  max-width: 1152px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 16px;
+}
