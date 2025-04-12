@@ -976,6 +976,7 @@ a {
 
 .header-cabinet_icon {
   display: flex;
+  justify-content: end;
 }
 
 .header-cabinet-icon_bell {
@@ -1201,6 +1202,15 @@ a {
   flex-direction: column;
   gap: 16px;
   text-align: center;
+}
+
+.profile-data_social button {
+  width: 207px;
+  margin-left: auto;
+}
+
+.profile-data_social input {
+  min-width: 269px;
 }
 
 .profile-data-social_icon {
