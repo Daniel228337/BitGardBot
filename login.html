@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/media.css">
 </head>
 <body>
     <header class="header header-login">
-    
         <div class="container">
-            <div class="row between">
+            <div class="row">
                 <div class="col col-3">
-                    <a href="#!"><img src="./img/header_logo.svg" alt=""></a>
+                    <a href="#!"><img class="header_logo" src="./img/header_logo.svg" alt=""></a>
                 </div>
-                <div class="col col-5 margin">
+                <div class="col col-5 margin desktop">
                     <nav class="header_nav">
                         <a href="#!">Главная</a>
                         <a href="#!">Стратегии</a>
@@ -22,20 +22,22 @@
                         <a href="#!">Связаться с нами</a>
                     </nav>
                 </div>
-                <div class="col col-4">
+                <div class="col col-4 desktop">
                     <div class="header_login">
-                        <button class="btn btn-black">Вход</button>
+                        <button class="btn btn-black ">Вход</button>
                         <button class="btn">Регистрация</button>
                     </div>
                 </div>
+                <div class="mobile_hamburger"><img src="./img/hamburger-icon.png" alt=""></div>
             </div>
         </div>
     </header>
 
     <section class="login-form">
+        <div class="login-form_bg"></div>
         <div class="container">
             <div class="row">
-                <div class="login-form_wrap">
+                <div class="login-form_wrap col col-md-12">
                     <h1>Вход</h1>
                     <p>Введите ваш Email и пароль для входа</p>
                     <form action="">
@@ -50,7 +52,7 @@
                         <a href="#!"></a>
                         <button class="btn btn-border">Войти</button>
                     </form>
-                    <span>Нет аккаунта?</span><a href="#!">Зарегистрируйтесь</a>
+                    <div><span>Нет аккаунта?</span><a href="#!">Зарегистрируйтесь</a></div>
                 </div>
             </div>
         </div>

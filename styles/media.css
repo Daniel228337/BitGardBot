@@ -17,3 +17,474 @@
 .margin {
     margin: auto;
 }
+
+@media (max-width: 1399px) {
+    .cabinet-main form {
+        margin: 0 20px;
+    }
+
+    .cabinet-registrations_balance {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .cabinet-registrations_wrap {
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .greating {
+        padding: 180px 0 150px;
+    }
+
+    .possibilities::before {
+        width: 75%
+    }
+
+    .register_wrap {
+        width: 100%;
+    }
+
+    .register_wrap form input {
+        width: 100%;
+    }
+
+    .register-wrap-form_password-new {
+        width: 80%;
+        margin-top: auto;
+    }
+
+    .register_wrap form button {
+        width: 273px;
+        margin-bottom: auto;
+    }
+
+    .register-wrap-form_password {
+        margin-top: auto;
+    }
+
+    .cabinet-main form input {
+        width: 260px;
+    }
+
+    .cabinet-main a {
+        padding: 20px 40px;
+    }
+
+    .cabinet-registrations_wrap {
+        width: 68%;
+    }
+
+    .cabinet-registrations-wrap_item p {
+        min-width: 0px;
+    }
+}
+
+@media (max-width: 991px) {
+    .header_image-wrapper{
+        height: 600px;
+    }
+
+    .safety {
+        padding-top: 49px;
+        padding-bottom: 60px;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    .mobile_hamburger {
+        display: block;
+        width: 55px;
+        height: 40px;
+        margin-left: auto;
+    }
+
+    .mobile_hamburger img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .greating {
+        padding: 120px 0 50px
+    }
+
+    .trading_img {
+        text-align: center;
+        justify-content: center;
+        /* margin: auto auto; */
+        margin-top: auto;
+    }
+
+    .margin-lg {
+        margin: auto;
+    }
+
+    .possibilities::before {
+        top: 38%;
+    }
+
+    .steps_mobile {
+        display: block;
+    }
+
+    .steps_line {
+        max-width: 22px;
+        max-height: 700px;
+        position: absolute;
+        right: 50%;
+    }
+
+    .steps_list {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 100px;
+        color: var(--color-white);
+      }
+
+      .steps_list li:nth-child(even) {
+        margin-top: 0px;
+      }
+
+      .steps_list li {
+        display: flex;
+        text-align: center;
+      }
+
+      .steps_list li {
+        max-width: 47px;
+        max-height: 47px;
+      }
+
+      .questions-items_item {
+        min-width: 100%;
+      }
+
+      .crypto-prices-cards_item {
+        padding: 30px 15px;
+      }
+
+      .crypto-prices_cards {
+        gap: 25px;
+      }
+
+      .crypto-prices-cards_item img {
+        width: 70px;
+        height: 70px;
+      }
+
+      .footer-top_info {
+        margin-bottom: 30px;
+      }
+
+      .login-form_bg {
+        left: 59%;
+      }
+
+      .register_wrap form {
+        display: grid;
+        grid-template-rows:  repeat(4, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px 20px;
+      }
+
+      .register-wrap-form_email {
+        grid-row: 1;
+        grid-column: 1;
+      }
+      
+      .register-wrap-form_password-new {
+        grid-row: 1;
+        grid-column: 2;
+      }
+      
+      .register-wrap-form_password {
+        grid-row: 2;
+        grid-column: 1;
+      }
+      
+      .register-wrap-form_name {
+        grid-row: 2;
+        grid-column: 2;
+      }
+      
+      .register-wrap-form_id {
+        grid-row: 3;
+        grid-column: 1;
+      }
+      
+      .register-wrap-form_btn {
+        grid-row: 3;
+        grid-column: 2;
+        height: 45;
+      }
+      
+      .register-wrap-form_input {
+        display: flex;
+        color: #00155F;
+        margin-top: auto;
+        grid-row: 4;
+        grid-column: 1;
+        font-size: 14px;
+        margin-bottom: auto;
+      }
+
+      .register_wrap form input {
+        width: 300px;
+      }
+
+      .register_wrap form button {
+        width: 300px;
+      }
+
+      .register_wrap {
+        margin: 50px auto 50px auto;
+      }
+
+      .cabinet-main form {
+        padding: 20px 15px;
+      }
+
+      .cabinet-main form label {
+        width: 100px;
+      }
+
+      .cabinet-main form {
+        grid-template-columns: repeat(3, 220px);
+        gap: 20px;
+      }
+
+      .cabinet-main form input {
+        width: 200px;
+      }
+
+      .cabinet-main_btn {
+        grid-column: 2 / 4 ;
+      }
+
+      .cabinet-main form label {
+        white-space: nowrap;
+      }
+
+      .cabinet-registrations_balance {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+
+      .cabinet-registrations-wrap_item {
+        width: 100%;
+      }
+
+      .cabinet-registrations_wrap {
+        width: 100%;
+        margin-right: 20px;
+      }
+
+}
+
+@media (max-width: 767px) {
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    .greating_title p {
+        font-size: 21px;
+    }
+
+    .trading_img {
+        margin-top: 20px;
+    }
+
+    .possibilities::before {
+        display: none;
+    }
+
+    .strategies_wrap {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .strategies_wrap p {
+        width: 100%;
+        /* margin-left: auto; */
+    }
+
+    .strategies-wrap_left {
+        margin-right: 0px;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    .safety_hand {
+        margin-top: 20px;
+    }
+
+    .crypto-prices-cards-item_price {
+        font-size: 22px;
+    }
+    
+    .crypto-prices-cards-item_price span {
+        font-size: 16px;
+    }
+
+    .crypto-prices-cards_item {
+        padding: 28px 40px;
+    }
+
+    .hidden-md {
+        display: none;
+    }
+
+    .contact-form_right {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .contact-form-left_input input {
+        min-width: 208px;
+    }
+
+    .advantages-item_text b {
+        font-size: 19px;
+    }
+
+    .advantages-item_text p {
+        font-size: 16px;
+    }
+
+    .login-form_bg::before {
+        display: none;
+    }
+
+    .login-form_bg {
+        display: none;
+    }
+
+    .login-form {
+        padding: 69px 0;
+    }
+
+    .login-form_wrap form input {
+        min-width: 100%;
+    }
+
+    .register_mobile {
+        display: flex;
+    }
+
+    .register_wrap form {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .register_wrap form input {
+        width: 100%;
+    }
+
+    .register-wrap-form_password-new {
+        width: 100%;
+    }
+
+    .register_wrap form button {
+        width: 100%;
+    }
+
+    .register_wrap {
+        padding: 25px 15px 30px;
+    }
+
+    .register_wrap h1 {
+        font-size: 19px;
+    }
+
+    .register_wrap form label {
+        font-size: 14px;
+    }
+
+    .register_wrap form input {
+        font-size: 16px;
+    }
+
+    .cabinet-main form {
+        grid-template-columns: 1fr;
+    }
+
+    .cabinet-main_partner-link {
+        grid-column: 1;
+    }
+
+    .cabinet-main_btn {
+        grid-column: 1;
+    }
+    
+}
+
+@media (max-width: 576px) {
+    .safety-left_item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .safety-left_item img {
+        margin-right: 0px;
+        margin-bottom: 10px;
+    }
+
+    .desktop-sm {
+        display: none;
+    }
+
+    .hidden-sm {
+        display: none;
+    }
+
+    .questions-items_item img {
+        max-height: 49px;
+    }
+
+    .questions-items_item {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .mobile-sm {
+        display: block;
+    }
+
+    .mobile-sm form {
+        flex-direction: column;
+    }
+
+    .mobile-sm form > input {
+        padding: 10px 18px;
+        margin-bottom: 10px;
+        outline: none;
+        color: #A1A1A1;
+        border: none;
+        border-radius: 4px;
+    }
+
+    .footer-top_info nav  {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .footer-top-info_license {
+        justify-content: center;
+    }
+
+    .register-wrap-form_input {
+        max-width: 90%;
+    }
+
+
+
+}

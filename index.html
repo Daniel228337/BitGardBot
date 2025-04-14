@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BankCoinBot</title>
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/media.css">
 </head>
 <body>
 
@@ -15,9 +16,9 @@
         <div class="container">
             <div class="row">
                 <div class="col col-3">
-                    <a href="#!"><img src="./img/header_logo.svg" alt=""></a>
+                    <a href="#!"><img class="header_logo" src="./img/header_logo.svg" alt=""></a>
                 </div>
-                <div class="col col-5 margin">
+                <div class="col col-5 margin desktop">
                     <nav class="header_nav">
                         <a href="#!">Главная</a>
                         <a href="#!">Стратегии</a>
@@ -25,19 +26,20 @@
                         <a href="#!">Связаться с нами</a>
                     </nav>
                 </div>
-                <div class="col col-4">
+                <div class="col col-4 desktop">
                     <div class="header_login">
                         <button class="btn">Вход</button>
                         <button class="btn">Регистрация</button>
                     </div>
                 </div>
+                <div class="mobile_hamburger"><img src="./img/hamburger-icon.png" alt=""></div>
             </div>
         </div>
     </header>
 
     <section class="greating">
         <div class="container">
-            <div class="col col-5">
+            <div class="col col-5 col-lg-8 col-md-11">
                 <div class="greating_title">
                     <h1>BankCoinBot</h1>
                     <p>лучший профессиональный инструмент для автоматизации торгового процесса на криптовалютных биржах</p>
@@ -50,14 +52,14 @@
     <section class="trading">
         <div class="container">
             <div class="row">
-                <div class="col col-6 margin">
+                <div class="col col-6 margin col-md-12">
                     <div class="trading_text">
                         <h2>Мы сделали трейдинг простым <br> и удобным!</h2>
-                        <p>Торговый крипто бот BankCoinBot помогает вести дела на <br> крипто валютных биржах, проводит сделки по заданным вами <br> параметрам, позволяет получать профит в автоматическом <br> режиме и не тратить время на отслеживание котировок. <br> Объединил в себе мощные торговые алгоритмы, безубыточные <br> стратегии, статистику и данные об успешных сделках с 2009 <br> года. Обеспечивает бесперебойную автоматическую торговлю <br> и стабильную доходность на растущем и падающем рынке.
+                        <p>Торговый крипто бот BankCoinBot помогает вести дела на крипто валютных биржах, проводит сделки по заданным вами параметрам, позволяет получать профит в автоматическом режиме и не тратить время на отслеживание котировок. Объединил в себе мощные торговые алгоритмы, безубыточные стратегии, статистику и данные об успешных сделках с 2009 года. Обеспечивает бесперебойную автоматическую торговлю и стабильную доходность на растущем и падающем рынке.
                         </p>
                     </div>
                 </div>
-                <div class="col col-6">
+                <div class="col col-6 margin-lg col-md-12">
                     <div class="trading_img">
                         <img src="./img/trading_laptop.svg" alt="">
                     </div>
@@ -70,7 +72,7 @@
         <div class="container">
             <h2>Преимущества использования<br> BankCoinBot</h2>
             <div class="row">
-                <div class="col col-6">
+                <div class="col col-6 col-md-12">
                     <div class="advantages_item">
                         <div class="advantages-item_img">
                             <img src="./img/advantages_icon-1.svg" alt="">
@@ -82,7 +84,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col col-6">
+                <div class="col col-6 col-md-12">
                     <div class="advantages_item">
                         <div class="advantages-item_img">
                             <img src="./img/advantages_icon-2.svg" alt="">
@@ -94,7 +96,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col col-6">
+                <div class="col col-6 col-md-12">
                     <div class="advantages_item">
                         <div class="advantages-item_img">
                             <img src="./img/advantages_icon-3.svg" alt="">
@@ -106,7 +108,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col col-6">
+                <div class="col col-6 col-md-12">
                     <div class="advantages_item">
                         <div class="advantages-item_img">
                             <img src="./img/advantages_icon-4.svg" alt="">
@@ -125,22 +127,30 @@
     <section class="possibilities">
         <div class="container">
             <h2>Возможности</h2>
-            <div class="row between">
-                <div class="possibilities_item">
-                    <img src="./img/possibilities_icon-1.svg" alt="">
-                    <p>Доходность крипто-бота в среднем составляет от 10% до 35% в месяц</p>
+            <div class="row between margin">
+                <div class="col col-3 col-md-6">
+                    <div class="possibilities_item">
+                        <img src="./img/possibilities_icon-1.svg" alt="">
+                        <p>Доходность крипто-бота в среднем составляет от 10% до 35% в месяц</p>
+                    </div>
                 </div>
-                <div class="possibilities_item">
-                    <img src="./img/possibilities_icon-2.svg" alt="">
-                    <p>Способен одновременно отслеживать котировки нескольких сотен <br> финансовых активов</p>
+                <div class="col col-3 col-md-6">
+                    <div class="possibilities_item">
+                        <img src="./img/possibilities_icon-2.svg" alt="">
+                        <p>Способен одновременно отслеживать котировки нескольких сотен <br> финансовых активов</p>
+                    </div>
                 </div>
-                <div class="possibilities_item">
-                    <img src="./img/possibilities_icon-3.svg" alt="">
-                    <p>Сверх быстро принимает оптимальные решения и моментально совершать торговые операции</p>
+                <div class="col col-3 col-md-6">
+                    <div class="possibilities_item">
+                        <img src="./img/possibilities_icon-3.svg" alt="">
+                        <p>Сверх быстро принимает оптимальные решения и моментально совершать торговые операции</p>
+                    </div>
                 </div>
-                <div class="possibilities_item">
-                    <img src="./img/possibilities_icon-4.svg" alt="">
-                    <p>Бот не "сливает депозит" так как работает на спотовом рынке</p>
+                <div class="col col-3 col-md-6">
+                    <div class="possibilities_item">
+                        <img src="./img/possibilities_icon-4.svg" alt="">
+                        <p>Бот не "сливает депозит" так как работает на спотовом рынке</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -150,25 +160,25 @@
         <div class="container">
             <h2>Функции</h2>
             <div class="row">
-                <div class="col col-3">
+                <div class="col col-3 col-md-6">
                     <div class="functions_item">
                         <img src="./img/functions_icon.svg" alt="">
                         <p>Бот следит за рынками и выставляет ордера на покупку/продажу по уникальному алгоритму</p>
                     </div>
                 </div>
-                <div class="col col-3">
+                <div class="col col-3 col-md-6">
                     <div class="functions_item">
                         <img src="./img/functions_icon.svg" alt="">
                         <p>Постоянно оценивает ситуацию<br> и добавляет новые сделки <br> в нужном размере</p>
                     </div>
                 </div>
-                <div class="col col-3">
+                <div class="col col-3 col-md-6">
                     <div class="functions_item">
                         <img src="./img/functions_icon.svg" alt="">
                         <p>При развороте выставляет противоположные ордера и готовится фиксировать прибыль <br> на заданных уровнях</p>
                     </div>
                 </div>
-                <div class="col col-3">
+                <div class="col col-3 col-md-6">
                     <div class="functions_item">
                         <img src="./img/functions_icon.svg" alt="">
                         <p>Применяет торговую стратегию усреднения основанную по системе мартингейла
@@ -184,8 +194,8 @@
             <h2>Стратегии</h2>
             <div class="strategies_wrap">
                 <div class="strategies-wrap_left">
-                    <p>BankCoin Bot выполняет действия трейдера, только<br> в разы быстрее. Молниеносно реагирует<br> на меняющуюся ситуацию на рынке и не боится<br> совершать сделки.<br> Торговый бот не ест, не спит и не устает, он работает<br> постоянно.<br>
-                        Не тратя время на анализ рынка и обучение трейдингу<br> и вы можете подобрать оптимально прибыльную<br> стратегию именно под ваши торговые пары и депозит.
+                    <p>BankCoin Bot выполняет действия трейдера, только в разы быстрее. Молниеносно реагирует на меняющуюся ситуацию на рынке и не боится совершать сделки. Торговый бот не ест, не спит и не устает, он работает постоянно.
+                        Не тратя время на анализ рынка и обучение трейдингу и вы можете подобрать оптимально прибыльную стратегию именно под ваши торговые пары и депозит.
                     </p>
                 </div>
                 <div class="strategies-wrap_right">
@@ -209,26 +219,32 @@
     <section class="safety">
         <div class="container">
             <div class="row">
-                <h2>Безопасность</h2>
+                <div class="col">
+                    <h2>Безопасность</h2>
+                </div>
             </div>
 
             <div class="row">
-                <div class="safety_left">
-                    <div class="safety-left_item">
-                        <div><img src="./img/safety_icon-1.svg" alt=""></div>
-                        <p>Торговый бот работает на удаленном облачном сервере, вам не придется держать свой компьютер включенным, всегда и в любой момент вы можете зайти с любого устройства из любой точки планеты и отследить работу бота. </p>
+                <div class="col col-6 col-md-12">
+                    <div class="safety_left">
+                        <div>
+                            <div class="safety-left_item">
+                                <div><img src="./img/safety_icon-1.svg" alt=""></div>
+                                <p>Торговый бот работает на удаленном облачном сервере, вам не придется держать свой компьютер включенным, всегда и в любой момент вы можете зайти с любого устройства из любой точки планеты и отследить работу бота. </p>
+                            </div>
+                            <div class="safety-left_item">
+                                <div><img src="./img/safety_icon-2.svg" alt=""></div>
+                                <p>Торговый бот работает на удаленном облачном сервере, вам не придется держать свой компьютер включенным, всегда и в любой момент вы можете зайти с любого устройства из любой точки планеты и отследить работу бота. </p>
+                            </div>
+                        </div>
+                        <div class="safety-left_item">
+                            <div><img src="./img/safety_icon-3.svg" alt=""></div>
+                            <p>Торговый бот работает на удаленном облачном сервере, вам не придется держать свой компьютер включенным, всегда и в любой момент вы можете зайти с любого устройства из любой точки планеты и отследить работу бота. </p>
+                        </div>
+                    
                     </div>
-                    <div class="safety-left_item">
-                        <div><img src="./img/safety_icon-2.svg" alt=""></div>
-                        <p>Торговый бот работает на удаленном облачном сервере, вам не придется держать свой компьютер включенным, всегда и в любой момент вы можете зайти с любого устройства из любой точки планеты и отследить работу бота. </p>
-                    </div>
-                    <div class="safety-left_item">
-                        <div><img src="./img/safety_icon-3.svg" alt=""></div>
-                        <p>Торговый бот работает на удаленном облачном сервере, вам не придется держать свой компьютер включенным, всегда и в любой момент вы можете зайти с любого устройства из любой точки планеты и отследить работу бота. </p>
-                    </div>
-                  
                 </div>
-                 <img class="safety_hand" src="./img/safety_hand.jpg" alt="">
+                 <div class="col col-6 col-md-12"><img class="safety_hand" src="./img/safety_hand.jpg" alt=""></div>
             </div>
         </div>
     </section>
@@ -236,36 +252,121 @@
     <section class="steps">
         <div class="container">
             <h2>Начни использовать BankCoinBot<br>в несколько простых шагов:</h2>
+            <div class="row">
+                <div class="col col-12 desktop">
+                    <img class="steps_line" src="./img/steps_line.svg" alt="">
+                    <ul class="steps_list">
+                        <li>
+                          <img src="./img/steps_icon-1.svg" alt="">
+                          <p>Пройдите регистрацию <br>и верификацию на бирже Binance или Bittrex</p>
+                        </li>
+                        <li>
+                            <p>Создайте API ключи на выбранной вами бирже</p>
+                          <img src="./img/steps_icon-2.svg" alt="">
+                        </li>
+                        <li>
+                          <img src="./img/steps_icon-3.svg" alt="">
+                          <p>Пополните баланс биржи</p>
+                        </li>
+                        <li>
+                            <p>Купите удаленный сервер</p>
+                          <img src="./img/steps_icon-4.svg" alt="">
+                        </li>
+                        <li>
+                          <img src="./img/steps_icon-5.svg" alt="">
+                          <p>Пройдите регистрацию на сайте</p>
+                        </li>
+                        <li>
+                            <p>Купите <br>BankCoinBot</p>
+                          <img src="./img/steps_icon-6.svg" alt="">
+                        </li>
+                        <li>
+                          <img src="./img/steps_icon-7.svg" alt="">
+                          <p>Загрузите и распакуйте бота</p>
+                        </li>
+                        <li>
+                            <p>Настройте торговые пары</p>
+                          <img src="./img/steps_icon-8.svg" alt="">
+                        </li>
+                        <li>
+                          <img src="./img/steps_icon-9.svg" alt="">
+                          <p>Запустите бота</p>
+                        </li>
+                      </ul>
+                </div>
+                <div class="col col-12 steps_mobile ">
+                    <img class="steps_line" src="./img/steps_line-mobile.png" alt="">
+                    
+                    <ul class="steps_list">
+                        <li>
+                          <img src="./img/steps_icon-1.svg" alt="">
+                          <p>Пройдите регистрацию <br>и верификацию на бирже Binance или Bittrex</p>
+                        </li>
+                        <li>
+                            <img src="./img/steps_icon-2.svg" alt="">
+                            <p>Создайте API ключи на выбранной вами бирже</p>
+                        </li>
+                        <li>
+                          <img src="./img/steps_icon-3.svg" alt="">
+                          <p>Пополните баланс биржи</p>
+                        </li>
+                        <li>
+                            <img src="./img/steps_icon-4.svg" alt="">
+                            <p>Купите удаленный сервер</p>
+                        </li>
+                        <li>
+                          <img src="./img/steps_icon-5.svg" alt="">
+                          <p>Пройдите регистрацию на сайте</p>
+                        </li>
+                        <li>
+                            <img src="./img/steps_icon-6.svg" alt="">
+                            <p>Купите <br>BankCoinBot</p>
+                        </li>
+                        <li>
+                          <img src="./img/steps_icon-7.svg" alt="">
+                          <p>Загрузите и распакуйте бота</p>
+                        </li>
+                        <li>
+                            <img src="./img/steps_icon-8.svg" alt="">
+                            <p>Настройте торговые пары</p>
+                        </li>
+                        <li>
+                          <img src="./img/steps_icon-9.svg" alt="">
+                          <p>Запустите бота</p>
+                        </li>
+                      </ul>
+                </div>
+            </div>
         </div>
     </section>
 
     <section class="crypto-prices">
         <div class="container">
             <h2>Актуальные цены на криптовалюту</h2>
-            
             <div class="crypto-prices_cards">
-                <div class="crypto-prices_btn">
-                    <img src="./img/button_left.svg" alt="">
-                </div>
-                <div class="crypto-prices-cards_item">
+                
+                <div class="hidden-md  crypto-prices-cards_item">
                     <img src="./img/crypto-prices_icon-1.svg" alt="">
                     <p class="crypto-prices-cards-item_text" >BTC | Биткоин</p>
                     <div class="crypto-prices-cards-item_price">$ 5000<span>+3%</span></div>
-
                 </div>
                 <div class="crypto-prices-cards_item">
                     <img src="./img/crypto-prices_icon-2.svg" alt="">
                     <p class="crypto-prices-cards-item_text" >ETH | ETHEREUM</p>
                     <div class="crypto-prices-cards-item_price">$ 5000<span>+3%</span></div>
                 </div>
-                <div class="crypto-prices-cards_item">
+                <div class="hidden-sm crypto-prices-cards_item">
                     <img src="./img/crypto-prices_icon-3.svg" alt="">
                     <p class="crypto-prices-cards-item_text" >XRP | РЯБЬ</p>
                     <div class="crypto-prices-cards-item_price">$ 5000<span>+3%</span></div>
                 </div>
-                <div class="crypto-prices_btn">
-                    <img src="./img/button_right.svg" alt="">
-                </div>
+                
+            </div>
+            <div class="crypto-prices_btn crypto-prices_btn-right">
+                <img src="./img/button_right.svg" alt="">
+            </div>
+            <div class="crypto-prices_btn crypto-prices_btn-left">
+                <img src="./img/button_left.svg" alt="">
             </div>
         </div>
     </section>
@@ -292,28 +393,48 @@
 
     <section class="contact-form">
         <div class="container">
-            <div class="row between">
-                <div class="contact-form_right">
-                    <img src="./img/contact-form_img.svg" alt="">
+            <div class="row">
+                <div class="col col-5 col-xl-4 col-md-12">
+                    <div class="contact-form_right">
+                        <img src="./img/contact-form_img.svg" alt="">
+                    </div>
                 </div>
-                <div class="contact-form_left">
-                    <h2>Заполните форму<br> мы свяжемся с вами</h2>
-                   <form action="">
-                        <div class="contact-form-left_input">
-                            <input type="text" placeholder="Имя">
-                            <input type="email" placeholder="Email">
-                            <input type="number" placeholder="+7">
-                        </div>
-                        <div class="contact-form-left_area">
-                            <textarea name="123" id="" placeholder="Ваше сообщение"></textarea>
-                            <div class="checkbox-container">
-                                <input type="checkbox">
-                                <label>Я согласен на <a href="">обработку персональных данных</a></label>
+                <div class="col col-7 col-xl-8 col-md-12">
+                    <div class="contact-form_left mobile-sm">
+                        <h2>Заполните форму<br> мы свяжемся с вами</h2>
+                       <form  action="">
+                                <input type="text" placeholder="Имя">
+                                <input type="email" placeholder="Email">
+                                <input type="number" placeholder="+7 (">
+                             <div class="contact-form-left_area">
+                                <textarea name="123" id="" placeholder="Ваше сообщение"></textarea>
+                                <div class="checkbox-container">
+                                    <input type="checkbox">
+                                    <label>Я согласен на <a href="">обработку персональных данных</a></label>
+                                </div>
+                                <button class="btn btn-border">Отправить</button>
                             </div>
-                            <button class="btn btn-border">Отправить</button>
-                        </div>
-                   </form>
-                
+                       </form>
+                    </div>
+
+                    <div class="contact-form_left desktop-sm">
+                        <h2>Заполните форму<br> мы свяжемся с вами</h2>
+                       <form  action="">
+                            <div class="contact-form-left_input">
+                                <input type="text" placeholder="Имя">
+                                <input type="email" placeholder="Email">
+                                <input type="number" placeholder="+7 (">
+                            </div>
+                            <div class="contact-form-left_area">
+                                <textarea name="123" id="" placeholder="Ваше сообщение"></textarea>
+                                <div class="checkbox-container">
+                                    <input type="checkbox">
+                                    <label>Я согласен на <a href="">обработку персональных данных</a></label>
+                                </div>
+                                <button class="btn btn-border">Отправить</button>
+                            </div>
+                       </form>
+                    </div>
                 </div>
             </div>
         </div>

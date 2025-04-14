@@ -5,15 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Регистрация</title>
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/media.css">
 </head>
 <body>
     <header class="header">
         <div class="container">
             <div class="row">
                 <div class="col col-3">
-                    <a href="#!"><img src="./img/header_logo.svg" alt=""></a>
+                    <a href="#!"><img class="header_logo" src="./img/header_logo.svg" alt=""></a>
                 </div>
-                <div class="col col-5 margin">
+                <div class="col col-5 margin desktop">
                     <nav class="header_nav">
                         <a href="#!">Главная</a>
                         <a href="#!">Стратегии</a>
@@ -21,12 +22,13 @@
                         <a href="#!">Связаться с нами</a>
                     </nav>
                 </div>
-                <div class="col col-4">
+                <div class="col col-4 desktop">
                     <div class="header_login">
                         <button class="btn">Вход</button>
                         <button class="btn btn-black">Регистрация</button>
                     </div>
                 </div>
+                <div class="mobile_hamburger"><img src="./img/hamburger-icon.png" alt=""></div>
             </div>
         </div>
     </header>
@@ -64,8 +66,8 @@
                     <button class="register-wrap-form_btn btn btn-border">Зарегистрироваться</button>
 
                     <div class="register-wrap-form_input">
-                        <label for="">Я согласен<span>c условиями использования BitGartBot</span></label>
                         <input class="" type="checkbox">
+                        <label for=""><p>Я согласен <a href="#!">c условиями использования BitGartBot</a></p></label>
                     </div>
 
                 </form>
