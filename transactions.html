@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transactions</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/media.css">
+</head>
+<body>
+    <header class="header-cabinet">
+        <div class="container">
+            <div class="row">
+                <div class="col col-3 margin col-md-5"><img class="header-cabinet_logo" src="./img/header_logo.svg" alt=""></div>
+                <div class="col col-5 col-md-2"></div>
+                <div class="col col-4">
+                    <div class="header-cabinet_icon">
+                        <img class="hidden-md" src="./img/cog.svg" alt="">
+                        <img class="header-cabinet-icon_bell" src="./img/bell.svg" alt="">
+                        <img class="hidden-md" src="./img/user-circle.svg" alt="">
+                        <a class="hidden-md" href="">Выход</a>
+                        <div class="mobile_hamburger"><img src="./img/hamburger-icon.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="profile-main">
+        <div class="container">
+            <div class="row desktop">
+                <a>Кабинет</a>
+                <a>Профиль</a>
+                <a>Транзакции</a>
+                <a>Вывод средств</a>
+                <a>Команда</a>
+                <a>Инструкции</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="transactions-table">
+        <div class="container">
+            <div class="row">
+                <div class="col col-3 col-lg-6 col-md-12 ">
+                    <div class="dropdown">
+                        <button class="dropdown-toggle">Оплата лицензии <img src="./img/transactions_icon-down.svg" alt=""></button>
+                        <ul class="dropdown-menu">
+                          <li>Покупка бота</li>
+                          <li>Покупка обслуживания</li>
+                        </ul>
+                      </div>
+                </div>
+                <div class="col col-3 col-lg-6 col-md-12 ">
+                    <a href="#!">Прямой бонус</a>
+                </div>
+                <div class="col col-3 col-lg-6 col-md-12 ">
+                    <a href="#!">Партнерский бонус</a>
+                </div>
+                <div class="col col-3 col-lg-6 col-md-12 ">
+                    <a href="#!">Прямой бонус</a>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col col-12">
+                  <div class="table-responsive">
+                    <div class="table">
+                      <table>
+                        <thead>
+                          <tr class="table_id">
+                            <th>ID</th>
+                            <th>Дата</th>
+                            <th>Время</th>
+                            <th>Сумма</th>
+                            <th>Комиссия</th>
+                            <th>Кошелек</th>
+                            <th>Статус</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr class="table_info">
+                            <td>13578</td>
+                            <td>14.03.2021</td>
+                            <td>14:30:28</td>
+                            <td>5000</td>
+                            <td>10$</td>
+                            <td>Бонусный</td>
+                            <td><span class="table_status table_color-g">Зачислено</span></td>
+                          </tr>
+                          <tr class="table_info">
+                            <td>13578</td>
+                            <td>14.03.2021</td>
+                            <td>14:30:28</td>
+                            <td>5000</td>
+                            <td>10$</td>
+                            <td>Бонусный</td>
+                            <td><span class="table_status table_color-r">Отклонено</span></td>
+                          </tr>
+                          <tr class="table_info">
+                            <td>13578</td>
+                            <td>14.03.2021</td>
+                            <td>14:30:28</td>
+                            <td>5000</td>
+                            <td>10$</td>
+                            <td>Бонусный</td>
+                            <td><span class="table_status table_color-o">Ожидает</span></td>
+                          </tr>
+                          <tr class="table_info">
+                            <td>13578</td>
+                            <td>14.03.2021</td>
+                            <td>14:30:28</td>
+                            <td>5000</td>
+                            <td>10$</td>
+                            <td>Бонусный</td>
+                            <td><span class="table_status table_color-g">Зачислено</span></td>
+                          </tr>
+                          <tr class="table_info">
+                            <td>13578</td>
+                            <td>14.03.2021</td>
+                            <td>14:30:28</td>
+                            <td>5000</td>
+                            <td>10$</td>
+                            <td>Бонусный</td>
+                            <td><span class="table_status table_color-g">Зачислено</span></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+        </div>
+    </section>
+<script src="./js/js.js"></script>
+</body>
+</html>

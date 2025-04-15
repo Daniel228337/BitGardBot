@@ -5,19 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Профиль</title>
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/media.css">
 </head>
 <body>
     <header class="header-cabinet">
         <div class="container">
             <div class="row">
-                <div class="col col-3 margin"><img src="./img/header_logo.svg" alt=""></div>
-                <div class="col col-5"></div>
+                <div class="col col-3 margin col-md-5"><img class="header-cabinet_logo" src="./img/header_logo.svg" alt=""></div>
+                <div class="col col-5 col-md-2"></div>
                 <div class="col col-4">
                     <div class="header-cabinet_icon">
-                        <img src="./img/cog.svg" alt="">
+                        <img class="hidden-md" src="./img/cog.svg" alt="">
                         <img class="header-cabinet-icon_bell" src="./img/bell.svg" alt="">
-                        <img src="./img/user-circle.svg" alt="">
-                        <a href="">Выход</a>
+                        <img class="hidden-md" src="./img/user-circle.svg" alt="">
+                        <a class="hidden-md" href="">Выход</a>
+                        <div class="mobile_hamburger"><img src="./img/hamburger-icon.png" alt=""></div>
                     </div>
                 </div>
             </div>
@@ -26,13 +28,13 @@
     
     <section class="profile-main">
         <div class="container">
-            <div class="row">
-                <p>Кабинет</p>
-                <p>Профиль</p>
-                <p>Транзакции</p>
-                <p>Вывод средств</p>
-                <p>Команда</p>
-                <p>Инструкции</p>
+            <div class="row desktop">
+                <a>Кабинет</a>
+                <a>Профиль</a>
+                <a>Транзакции</a>
+                <a>Вывод средств</a>
+                <a>Команда</a>
+                <a>Инструкции</a>
             </div>
         </div>
     </section>
@@ -40,52 +42,143 @@
     <section class="profile-data">
         <div class="container">
             <div class="row">
-                <form action="">
-                    <div class="profile-data_grid">
-                        <input class="profile-data_name" type="text" placeholder="Имя">
-                        <input class="profile-data_last-name" type="text" placeholder="Фамилия">
-                        <input class="profile-data_surname" type="text" placeholder="Отчество ( Если есть)">
-                        <input class="profile-data_date" type="text" placeholder="Дата рождения">
-                        <input class="profile-data_country" type="text" placeholder="Страна">
-                        <input class="profile-data_region" type="text" placeholder="Область">
-                        <input class="profile-data_city" type="text" placeholder="Город">
-                        <input type="text" placeholder="Номер телефона" class="profile-data_number">
-                        <input type="text" placeholder="Email" class="profile-data_email">
-                    </div>
-                           
-                    <div class="profile-data_social">
-                        <div class="profile-data-social_icon">
-                            <img src="./img/profile-data_tg.svg" alt="">
-                            <input type="text">
+                <div class="col col-12">
+                    <form class="profile-data_form between hidden-md" action="">
+                        <div class="profile-data_grid">
+                            <input class="profile-data_name" type="text" placeholder="Имя">
+                            <input class="profile-data_last-name" type="text" placeholder="Фамилия">
+                            <input class="profile-data_surname" type="text" placeholder="Отчество ( Если есть)">
+                            <input class="profile-data_date" type="text" placeholder="Дата рождения">
+                            <input class="profile-data_country" type="text" placeholder="Страна">
+                            <input class="profile-data_region" type="text" placeholder="Область">
+                            <input class="profile-data_city" type="text" placeholder="Город">
+                            <input type="text" placeholder="Номер телефона" class="profile-data_number">
+                            <input type="text" placeholder="Email" class="profile-data_email">
                         </div>
-                        <div class="profile-data-social_icon">
-                            <img src="./img/profile-data_twitter.svg" alt="">
-                            <input type="text">
-                        </div>
-                        <div class="profile-data-social_icon">
-                            <img src="./img/profile-data_inst.svg" alt="">
-                            <input type="text">
-                        </div>
-                        <div class="profile-data-social_icon">
-                            <img src="./img/profile-data_fb.svg" alt="">
-                            <input type="text">
-                        </div>
-                        <div class="profile-data-social_icon">
-                            <img src="./img/profile-data_ln.svg" alt="">
-                            <input type="text">
-                        </div>
-                        <button class="btn btn-border">Сохранить</button>
-                    </div>
-                </form>
-                <div>
                     
+                        <div class="col">
+                            <div class="profile-data_social">
+                                <div class="profile-data-social_icon">
+                                    <img src="./img/profile-data_tg.svg" alt="">
+                                    <input type="text">
+                                </div>
+                                <div class="profile-data-social_icon">
+                                    <img src="./img/profile-data_twitter.svg" alt="">
+                                    <input type="text">
+                                </div>
+                                <div class="profile-data-social_icon">
+                                    <img src="./img/profile-data_inst.svg" alt="">
+                                    <input type="text">
+                                </div>
+                                <div class="profile-data-social_icon">
+                                    <img src="./img/profile-data_fb.svg" alt="">
+                                    <input type="text">
+                                </div>
+                                <div class="profile-data-social_icon">
+                                    <img src="./img/profile-data_ln.svg" alt="">
+                                    <input type="text">
+                                </div>
+                                <button class="btn btn-border">Сохранить</button>
+                            </div>
+                        </div>
+                    </form>
+                    <form class="profile-data-form_mobile " action="">
+                            <div class="profile-data-form-mobile_title">Личные данные</div>
+                            <input class="profile-data_name" type="text" placeholder="Имя">
+                            <input class="profile-data_last-name" type="text" placeholder="Фамилия">
+                            <input class="profile-data_surname" type="text" placeholder="Отчество ( Если есть)">
+                            <input class="profile-data_date" type="text" placeholder="Дата рождения">
+                            <input class="profile-data_country" type="text" placeholder="Страна">
+                            <input class="profile-data_region" type="text" placeholder="Область">
+                            <input class="profile-data_city" type="text" placeholder="Город">
+                            <div class="profile-data-form-mobile_title">Контакты</div>
+                            <input type="text" placeholder="Номер телефона" class="profile-data_number">
+                            <input type="text" placeholder="Email" class="profile-data_email">
+                    
+                        <div class="col">
+                            <div class="profile-data_social">
+                                <div class="profile-data-social_icon">
+                                    <img src="./img/profile-data_tg.svg" alt="">
+                                    <input type="text">
+                                </div>
+                                <div class="profile-data-social_icon">
+                                    <img src="./img/profile-data_twitter.svg" alt="">
+                                    <input type="text">
+                                </div>
+                                <div class="profile-data-social_icon">
+                                    <img src="./img/profile-data_inst.svg" alt="">
+                                    <input type="text">
+                                </div>
+                                <div class="profile-data-social_icon">
+                                    <img src="./img/profile-data_fb.svg" alt="">
+                                    <input type="text">
+                                </div>
+                                <div class="profile-data-social_icon">
+                                    <img src="./img/profile-data_ln.svg" alt="">
+                                    <input type="text">
+                                </div>
+                                <button class="btn btn-border">Сохранить</button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
     </section>
 
     <section class="profile-change">
-        
+        <div class="container">
+
+            <div class="row">
+                <div class="col col-8 col-md-12">
+                    <div class="profile-change_password">
+                        <div class="profile-change_title">
+                            Изменить пароль для входа в личный кабинет
+                        </div>
+                        <div class="profile-change_wrap">
+                            <div class="row between">
+                                <div class="col col-lg-12">
+                                    <div class="profile-change_form">
+                                        <label for="">Старый пароль</label>
+                                        <input type="text" placeholder="Qwerty135790">
+                                        <img src="./img/profile_icon-eye.svg" alt="">
+                                    </div>
+                                    <div class="profile-change_form">
+                                        <label for="">Новый пароль</label>
+                                        <input type="text" placeholder="Qwerty135790">
+                                        <img src="./img/profile_icon-eye.svg" alt="">
+                                    </div>
+                                    <div class="profile-change_form">
+                                        <label for="">Повторите новый пароль</label>
+                                        <input type="text" placeholder="Qwerty135790">
+                                        <img src="./img/profile_icon-eye.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="col col-lg-12">
+                                    <ul class="profile-change_list">
+                                        <li>Ваш пароль должен содержать<br> не менее 7 символов</li>
+                                        <li>Ваш пароль не должен состоять<br> только из цифр</li>
+                                    </ul>
+                                        <button class="profile-change-wrap_button">Сохранить</button>
+                                </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col col-4 col-md-12">
+                    <div class="password-info">
+                        <div class="password-info_title">Предупреждение</div>
+                        <p>Настройки будут применены при следующем входе в личный кабинет. Все старые незащищённые сеансы (включая текущий) по-прежнему будут иметь доступ к вашему аккаунту с любого адреса 
+                        </p>
+                        <img src="./img/profile_paswword.png" alt="">
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
     </section>
     
 </body>

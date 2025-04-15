@@ -20,7 +20,8 @@
 
 @media (max-width: 1399px) {
     .cabinet-main form {
-        margin: 0 20px;
+        margin: 0 10px;
+        width: 100%;
     }
 
     .cabinet-registrations_balance {
@@ -79,6 +80,42 @@
     .cabinet-registrations-wrap_item p {
         min-width: 0px;
     }
+
+    .cabinet-registrations_balance {
+        margin-right: 0;
+    }
+
+
+    .profile-data_grid {
+        grid-template-rows: repeat(4, 63px);
+        grid-template-columns: repeat(3, 171px);
+    }
+
+    .profile-data_social input {
+        min-width: 0;
+        width: 100%;
+      }
+
+    .profile-data_social {
+        max-width: 400px;
+    }
+
+    .profile-main a {
+        padding: 17px 34px;
+    }
+
+    .profile-change_form input {
+        min-width: 269px;
+    }
+
+    .profile-change-wrap_button {
+        margin-top: 35px;
+    }
+
+    .withdraw_wrap input {
+        min-width: 0;
+    }
+   
 }
 
 @media (max-width: 991px) {
@@ -253,7 +290,7 @@
       }
 
       .cabinet-main form {
-        grid-template-columns: repeat(3, 220px);
+        grid-template-columns: repeat(3, 1FR);
         gap: 20px;
       }
 
@@ -282,6 +319,84 @@
         width: 100%;
         margin-right: 20px;
       }
+
+      .cabinet-main form {
+        width: 100%;
+    }
+
+    .cabinet-registrations_balance {
+        margin-right: 20px;
+    }
+
+    .cabinet-main form input {
+        width: 100%;
+    } 
+
+    
+    .profile-data_grid {
+        grid-template-rows: repeat(4, 63px);
+        grid-template-columns: repeat(3, 120px);
+    }
+
+    .profile-data_social input {
+        min-width: 0;
+        width: 100%;
+      }
+
+    .profile-data_social {
+        max-width: 172px;
+    }
+
+    .profile-main a {
+        padding: 17px 34px;
+    }
+
+    .profile-change_form input {
+        min-width: 100px;
+    }
+
+    .profile-change-wrap_button {
+        margin-top: 35px;
+    }
+
+    .profile-data_social button {
+        width: 147px;
+    }
+
+    .profile-data form {
+        gap: 20px;
+    }
+
+    .profile-data form input {
+        max-width: 150px;
+    }
+
+    .profile-data form {
+        padding: 20px 15px;
+    }
+
+    .password-info {
+        padding: 30px 20px 40px;
+    }
+
+    .table table {
+        margin-top: 20px;
+    }
+
+    .table-responsive {
+        width: 100%;
+        overflow-x: auto;
+      }
+
+    .withdraw_wrap {
+        padding: 20px 15px;
+    }
+    
+    .withdraw_wrap button {
+        max-width: 100%;
+        width: 100%;
+    }
+    
 
 }
 
@@ -339,7 +454,7 @@
     }
 
     .hidden-md {
-        display: none;
+        display: none !important;
     }
 
     .contact-form_right {
@@ -423,6 +538,64 @@
     .cabinet-main_btn {
         grid-column: 1;
     }
+
+    .cabinet-main form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cabinet-main form input {
+        max-width: 100%;
+    }
+
+    .cabinet-main_btn {
+        /* margin-left: 0; */
+        margin-right: auto;
+    }
+
+    .mobile_hamburger img {
+        min-width: 50px;
+    }
+
+    .cabinet-registrations {
+        padding-bottom: 50px;
+    }
+
+    .cabinet-registrations-wrap_item p {
+        font-size: 16px;
+    }
+
+    .cabinet-registrations-wrap-item_span span {
+        font-size: 15px;
+    }
+
+    .profile-data_grid {
+        display: flex;
+    }
+
+    .profile-data .profile-data-form_mobile {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .profile-data form input {
+        max-width: 100%;
+    }
+
+    .profile-data-form-mobile_title {
+        color: var(--color-white);
+        font-weight: 700;
+        line-height: 1.5;
+    }
+
+    .profile-data_social {
+        max-width: 100%;
+    }
+
+    .password-info p {
+        max-width: 100%;
+    }
+
     
 }
 
@@ -485,6 +658,19 @@
         max-width: 90%;
     }
 
+    .cabinet-main_btn {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
 
+    .cabinet-registrations-wrap-item_span {
+        padding: 12px 22px;
+    }
+
+    .instructions-wrap_button {
+        font-size: 15px;
+        padding-left: 30px;
+    }
 
 }
