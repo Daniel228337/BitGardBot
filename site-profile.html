@@ -28,9 +28,9 @@
     
     <section class="profile-main">
         <div class="container">
-            <div class="row desktop">
+            <div class="row desktop col">
                 <a>Кабинет</a>
-                <a>Профиль</a>
+                <a class="btn-nav-active">Профиль</a>
                 <a>Транзакции</a>
                 <a>Вывод средств</a>
                 <a>Команда</a>
@@ -128,7 +128,6 @@
 
     <section class="profile-change">
         <div class="container">
-
             <div class="row">
                 <div class="col col-8 col-md-12">
                     <div class="profile-change_password">
@@ -137,32 +136,37 @@
                         </div>
                         <div class="profile-change_wrap">
                             <div class="row between">
-                                <div class="col col-lg-12">
-                                    <div class="profile-change_form">
-                                        <label for="">Старый пароль</label>
-                                        <input type="text" placeholder="Qwerty135790">
-                                        <img src="./img/profile_icon-eye.svg" alt="">
-                                    </div>
-                                    <div class="profile-change_form">
-                                        <label for="">Новый пароль</label>
-                                        <input type="text" placeholder="Qwerty135790">
-                                        <img src="./img/profile_icon-eye.svg" alt="">
-                                    </div>
-                                    <div class="profile-change_form">
-                                        <label for="">Повторите новый пароль</label>
-                                        <input type="text" placeholder="Qwerty135790">
-                                        <img src="./img/profile_icon-eye.svg" alt="">
-                                    </div>
+                              <div class="col col-lg-12">
+                                <div class="profile-change_form">
+                                  <label for="">Старый пароль</label>
+                                  <input type="password" placeholder="">
+                                  <img src="./img/profile_icon-eye.svg" alt="Закрытый глаз" class="toggle-password">
+                                  <img src="./img/profile_icon-eye-open.svg" alt="Открытый глаз" class="toggle-password eye-open">
                                 </div>
-                                <div class="col col-lg-12">
-                                    <ul class="profile-change_list">
-                                        <li>Ваш пароль должен содержать<br> не менее 7 символов</li>
-                                        <li>Ваш пароль не должен состоять<br> только из цифр</li>
-                                    </ul>
-                                        <button class="profile-change-wrap_button">Сохранить</button>
+                                <div class="profile-change_form">
+                                  <label for="">Новый пароль</label>
+                                  <input type="password" placeholder="">
+                                  <img src="./img/profile_icon-eye.svg" alt="Закрытый глаз" class="toggle-password">
+                                  <img src="./img/profile_icon-eye-open.svg" alt="Открытый глаз" class="toggle-password eye-open">
                                 </div>
-                        </div>
-                        </div>
+                                <div class="profile-change_form">
+                                  <label for="">Повторите новый пароль</label>
+                                  <input type="password" placeholder="">
+                                  <img src="./img/profile_icon-eye.svg" alt="Закрытый глаз" class="toggle-password">
+                                  <img src="./img/profile_icon-eye-open.svg" alt="Открытый глаз" class="toggle-password eye-open">
+                                </div>
+                              </div>
+                              <div class="col col-lg-12">
+                                <ul class="profile-change_list">
+                                  <li>Ваш пароль должен содержать<br> не менее 7 символов</li>
+                                  <li>Ваш пароль не должен состоять<br> только из цифр</li>
+                                </ul>
+                                <button class="profile-change-wrap_button">Сохранить</button>
+                              </div>
+                            </div>
+                          </div>
+                          
+                        
                     </div>
                 </div>
 
@@ -180,6 +184,6 @@
 
         </div>
     </section>
-    
+    <script src="./js/profile.js"></script>
 </body>
 </html>

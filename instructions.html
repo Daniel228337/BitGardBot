@@ -28,13 +28,13 @@
 
     <section class="profile-main">
         <div class="container">
-            <div class="row desktop">
+            <div class="row desktop col">
                 <a>Кабинет</a>
                 <a>Профиль</a>
                 <a>Транзакции</a>
                 <a>Вывод средств</a>
                 <a>Команда</a>
-                <a>Инструкции</a>
+                <a class="btn-nav-active">Инструкции</a>
             </div>
         </div>
     </section>
@@ -44,22 +44,22 @@
             <div class="row">
                 <div class="col col-5 col-xl-12">
                     <div class="instructions_wrap">
-                        <div class="instructions-wrap_button">Как зарегистрироваться на бирже Binance</div>
-                        <div class="instructions-wrap_button">Как зарегистрироваться на бирже Bittrex</div>
-                        <div class="instructions-wrap_button">Как пройти верификацию на бирже Binance</div>
-                        <div class="instructions-wrap_button">Как создать  API ключи на бирже  Binance</div>
-                        <div class="instructions-wrap_button">Как создать  API ключи на бирже Bittrex</div>
-                        <div class="instructions-wrap_button">Как купить сервер</div>
-                        <div class="instructions-wrap_button">Как распаковать/установить/запустить бота</div>
+                        <button data-index="1" class="instructions-wrap_button">Как зарегистрироваться на бирже Binance</button>
+                        <button data-index="2" class="instructions-wrap_button">Как зарегистрироваться на бирже Bittrex</button>
+                        <button data-index="3" class="instructions-wrap_button">Как пройти верификацию на бирже Binance</button>
+                        <button data-index="4" class="instructions-wrap_button">Как создать  API ключи на бирже  Binance</button>
+                        <button data-index="5" class="instructions-wrap_button">Как создать  API ключи на бирже Bittrex</button>
+                        <button data-index="6" class="instructions-wrap_button">Как купить сервер</button>
+                        <button data-index="7" class="instructions-wrap_button">Как распаковать/установить/запустить бота</button>
                     </div>
                 </div>
                 <div class="col col-7 col-xl-12">
-                    <div class="instructions_wrap_photo"><img class="instructions_photo" src="./img/instructions_photo.jpg" alt=""></div>
+                    <div id="text-window" class="instructions_wrap_photo"></div>
                 </div>
             </div>
         </div>
     </section>
 
-
+<script src="./js/instructions-script.js"></script>
 </body>
 </html>

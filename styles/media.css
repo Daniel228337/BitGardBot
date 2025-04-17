@@ -102,6 +102,7 @@
 
     .profile-main a {
         padding: 17px 34px;
+        cursor: pointer;
     }
 
     .profile-change_form input {
@@ -114,6 +115,12 @@
 
     .withdraw_wrap input {
         min-width: 0;
+    }
+
+    .instructions_wrap_photo {
+        display: block;
+        width: 100%;
+        margin-top: 20px;
     }
    
 }
@@ -353,6 +360,7 @@
 
     .profile-change_form input {
         min-width: 100px;
+        max-width: 100%;
     }
 
     .profile-change-wrap_button {
@@ -396,6 +404,45 @@
         max-width: 100%;
         width: 100%;
     }
+
+    .steps_list li:nth-child(even) {
+        margin-left: auto;
+        margin-right: 200px;
+    }
+
+    .steps_list li:nth-child(odd) {
+        margin-left: 100px;
+    }
+
+    .steps_list li {
+        display: flex;
+        max-width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .steps_list li img {
+        min-width: 47px;
+        text-align: center;
+    }
+
+    .steps_list p {
+        max-width: 400%;
+        min-width: 259px;
+    }
+
+    .steps_line {
+        min-width: 22px;
+        min-height: 780px;
+    }
+
+    .steps_list {
+        gap: 40px;
+        /* white-space: nowrap; */
+        text-align: center;
+    }
+
+    
     
 
 }
@@ -596,7 +643,32 @@
         max-width: 100%;
     }
 
+    .steps_list li:nth-child(even) {
+        margin-left: auto;
+    }
+
+    .steps_list li:nth-child(odd) {
+        margin-right: auto;
+    }
+
+    .steps_list {
+        gap: 126px;
+    }
+
+    .steps_line {
+        min-height: 1501px;
+    }
+
+    .safety_hand {
+        width: 100%;
+    }
+
+    .safety_left {
+        max-width: 100%;
+    }
+
     
+
 }
 
 @media (max-width: 576px) {
@@ -672,5 +744,12 @@
         font-size: 15px;
         padding-left: 30px;
     }
+
+    .instructions_wrap_photo {
+        font-size: 16px;
+        height: 300px;
+    }
+
+
 
 }

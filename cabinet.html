@@ -29,12 +29,14 @@
     <section class="cabinet-main">
         <div class="container">
             <div class="row desktop">
-                <a>Кабинет</a>
-                <a>Профиль</a>
-                <a>Транзакции</a>
-                <a>Вывод средств</a>
-                <a>Команда</a>
-                <a>Инструкции</a>
+                <nav class="row col">
+                    <a class="btn-nav-active">Кабинет</a>
+                    <a>Профиль</a>
+                    <a>Транзакции</a>
+                    <a>Вывод средств</a>
+                    <a>Команда</a>
+                    <a>Инструкции</a>
+                </nav>
             </div>
             <div class="row">
                 <form action="">
@@ -81,10 +83,11 @@
                     <div class="cabinet-main_partner-link">
                         <label for="">Партнерская ссылка:</label>
                         <div class="cabinet-main-partner-link_wrap">
-                            <input type="text" placeholder="www.fromdev.github.io/random-random-">
-                            <img src="./img/cabinet-main_icon-1.svg" alt="">
+                            <input type="text" id="partner-link" value="www.fromdev.github.io/random-random-" readonly>
+                            <img src="./img/cabinet-main_icon-1.svg" alt="Скопировать" id="copy-btn">
                         </div>
                     </div>
+                    
                     <div class="cabinet-main_date">
                         <label for="">Дата регистрации</label>
                         <input type="text" placeholder="09.04.2025">
@@ -132,5 +135,7 @@
             </div>
         </div>
     </section>
+    
+    <script src="./js/cabinet.js"></script>
 </body>
 </html>
