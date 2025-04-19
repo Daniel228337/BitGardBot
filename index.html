@@ -6,6 +6,7 @@
     <title>BankCoinBot</title>
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/media.css">
+    <link rel="stylesheet" href="./styles/slider.css">
 </head>
 <body>
 
@@ -16,7 +17,7 @@
         <div class="container">
             <div class="row">
                 <div class="col col-3">
-                    <a href="#!"><img class="header_logo" src="./img/header_logo.svg" alt=""></a>
+                    <a href="index.html"><img class="header_logo" src="./img/header_logo.svg" alt=""></a>
                 </div>
                 <div class="col col-5 margin desktop">
                     <nav class="header_nav">
@@ -28,8 +29,8 @@
                 </div>
                 <div class="col col-4 desktop">
                     <div class="header_login">
-                        <button class="btn">Вход</button>
-                        <button class="btn">Регистрация</button>
+                        <a href="login.html" class="btn">Вход</a>
+                        <a href="register.html" class="btn">Регистрация</a>
                     </div>
                 </div>
                 <div class="mobile_hamburger"><img src="./img/hamburger-icon.png" alt=""></div>
@@ -162,25 +163,25 @@
             <div class="row">
                 <div class="col col-3 col-md-6">
                     <div class="functions_item">
-                        <img src="./img/functions_icon.svg" alt="">
+                        <div class="function-item_img"><img src="./img/functions_icon.svg" alt=""></div>
                         <p>Бот следит за рынками и выставляет ордера на покупку/продажу по уникальному алгоритму</p>
                     </div>
                 </div>
                 <div class="col col-3 col-md-6">
                     <div class="functions_item">
-                        <img src="./img/functions_icon.svg" alt="">
+                        <div class="function-item_img"><img src="./img/functions_icon.svg" alt=""></div>
                         <p>Постоянно оценивает ситуацию<br> и добавляет новые сделки <br> в нужном размере</p>
                     </div>
                 </div>
                 <div class="col col-3 col-md-6">
                     <div class="functions_item">
-                        <img src="./img/functions_icon.svg" alt="">
+                        <div class="function-item_img"><img src="./img/functions_icon.svg" alt=""></div>
                         <p>При развороте выставляет противоположные ордера и готовится фиксировать прибыль <br> на заданных уровнях</p>
                     </div>
                 </div>
                 <div class="col col-3 col-md-6">
                     <div class="functions_item">
-                        <img src="./img/functions_icon.svg" alt="">
+                        <div class="function-item_img"><img src="./img/functions_icon.svg" alt=""></div>
                         <p>Применяет торговую стратегию усреднения основанную по системе мартингейла
                         </p>
                     </div>
@@ -254,42 +255,41 @@
             <h2>Начни использовать BankCoinBot<br>в несколько простых шагов:</h2>
             <div class="row">
                 <div class="col col-12 desktop">
-                    <img class="steps_line" src="./img/steps_line.svg" alt="">
-                    <ul class="steps_list">
+                    <ul class="home-steps_list">
                         <li>
-                          <img src="./img/steps_icon-1.svg" alt="">
+                          <b>1</b>
                           <p>Пройдите регистрацию <br>и верификацию на бирже Binance или Bittrex</p>
                         </li>
                         <li>
-                            <p>Создайте API ключи на выбранной вами бирже</p>
-                          <img src="./img/steps_icon-2.svg" alt="">
+                          <b>2</b>
+                          <p>Создайте API ключи на выбранной вами бирже</p>
                         </li>
                         <li>
-                          <img src="./img/steps_icon-3.svg" alt="">
+                          <b>3</b>
                           <p>Пополните баланс биржи</p>
                         </li>
                         <li>
-                            <p>Купите удаленный сервер</p>
-                          <img src="./img/steps_icon-4.svg" alt="">
+                          <b>4</b>
+                          <p>Купите удаленный сервер</p>
                         </li>
                         <li>
-                          <img src="./img/steps_icon-5.svg" alt="">
+                          <b>5</b>
                           <p>Пройдите регистрацию на сайте</p>
                         </li>
                         <li>
-                            <p>Купите <br>BankCoinBot</p>
-                          <img src="./img/steps_icon-6.svg" alt="">
+                          <b>6</b>
+                          <p>Купите <br>BankCoinBot</p>
                         </li>
                         <li>
-                          <img src="./img/steps_icon-7.svg" alt="">
+                          <b>7</b>
                           <p>Загрузите и распакуйте бота</p>
                         </li>
                         <li>
-                            <p>Настройте торговые пары</p>
-                          <img src="./img/steps_icon-8.svg" alt="">
+                          <b>8</b>
+                          <p>Настройте торговые пары</p>
                         </li>
                         <li>
-                          <img src="./img/steps_icon-9.svg" alt="">
+                          <b>9</b>
                           <p>Запустите бота</p>
                         </li>
                       </ul>
@@ -343,29 +343,57 @@
     <section class="crypto-prices">
         <div class="container">
             <h2>Актуальные цены на криптовалюту</h2>
-            <div class="crypto-prices_cards">
+            <div class="crypto-prices_cards slider">
                 
-                <div class="hidden-md  crypto-prices-cards_item">
-                    <img src="./img/crypto-prices_icon-1.svg" alt="">
-                    <p class="crypto-prices-cards-item_text" >BTC | Биткоин</p>
-                    <div class="crypto-prices-cards-item_price">$ 5000<span>+3%</span></div>
+                <div class="col slider__item">
+                    <div class="hidden-md  crypto-prices-cards_item">
+                        <img src="./img/crypto-prices_icon-1.svg" alt="">
+                        <p class="crypto-prices-cards-item_text" >BTC | Биткоин</p>
+                        <div class="crypto-prices-cards-item_price">$ 5000<span>+3%</span></div>
+                    </div>
                 </div>
-                <div class="crypto-prices-cards_item">
-                    <img src="./img/crypto-prices_icon-2.svg" alt="">
-                    <p class="crypto-prices-cards-item_text" >ETH | ETHEREUM</p>
-                    <div class="crypto-prices-cards-item_price">$ 5000<span>+3%</span></div>
+                <div class="col slider__item">
+                    <div class="crypto-prices-cards_item">
+                        <img src="./img/crypto-prices_icon-2.svg" alt="">
+                        <p class="crypto-prices-cards-item_text" >ETH | ETHEREUM</p>
+                        <div class="crypto-prices-cards-item_price">$ 5000<span>+3%</span></div>
+                    </div>
                 </div>
-                <div class="hidden-sm crypto-prices-cards_item">
-                    <img src="./img/crypto-prices_icon-3.svg" alt="">
-                    <p class="crypto-prices-cards-item_text" >XRP | РЯБЬ</p>
-                    <div class="crypto-prices-cards-item_price">$ 5000<span>+3%</span></div>
+                <div class="col slider__item">
+                    <div class="hidden-sm crypto-prices-cards_item ">
+                        <img src="./img/crypto-prices_icon-3.svg" alt="">
+                        <p class="crypto-prices-cards-item_text" >XRP | РЯБЬ</p>
+                        <div class="crypto-prices-cards-item_price">$ 5000<span>+3%</span></div>
+                    </div>
                 </div>
+                <div class="col slider__item">
+                    <div class="hidden-sm crypto-prices-cards_item ">
+                        <img src="./img/crypto-prices_icon-3.svg" alt="">
+                        <p class="crypto-prices-cards-item_text" >XRP | РЯБЬ</p>
+                        <div class="crypto-prices-cards-item_price">$ 50s00<span>+3%</span></div>
+                    </div>
+                </div>
+                <div class="col slider__item">
+                    <div class="hidden-sm crypto-prices-cards_item ">
+                        <img src="./img/crypto-prices_icon-3.svg" alt="">
+                        <p class="crypto-prices-cards-item_text" >XRP | РЯБЬ</p>
+                        <div class="crypto-prices-cards-item_price">$ 500we0<span>+3%</span></div>
+                    </div>
+                </div>
+                <div class="col slider__item">
+                    <div class="hidden-sm crypto-prices-cards_item ">
+                        <img src="./img/crypto-prices_icon-3.svg" alt="">
+                        <p class="crypto-prices-cards-item_text" >XRP | РЯБЬ</p>
+                        <div class="crypto-prices-cards-item_price">$ 50d00<span>+3%</span></div>
+                    </div>
+                </div>
+               
                 
             </div>
             <div class="crypto-prices_btn crypto-prices_btn-right">
                 <img src="./img/button_right.svg" alt="">
             </div>
-            <div class="crypto-prices_btn crypto-prices_btn-left">
+            <div class="crypto-prices_btn crypto-prices_btn-left ">
                 <img src="./img/button_left.svg" alt="">
             </div>
         </div>
@@ -373,24 +401,133 @@
 
     <section class="questions">
         <div class="container">
-            <h2>FAQ</h2>
-            <div class="questions_items">
-                <div class="questions-items_item"><p class="questions-items-item_text">Что такое крипто бот?</p><img src="./img/button_down.svg" alt=""></div>
-                <div class="questions-items_item"><p class="questions-items-item_text">На каких биржах торгует BankCoinBot?</p><img src="./img/button_down.svg" alt=""></div>
-                <div class="questions-items_item"><p class="questions-items-item_text">Какую доходность я могу получить с помощью крипто бота в месяц?</p><img src="./img/button_down.svg" alt=""></div>
-                <div class="questions-items_item"><p class="questions-items-item_text">Какими парами торгует крипто бот?</p><img src="./img/button_down.svg" alt=""></div>
-                <div class="questions-items_item"><p class="questions-items-item_text">С каким минимальным депозитом начинает торговать бот?</p><img src="./img/button_down.svg" alt=""></div>
-                <div class="questions-items_item"><p class="questions-items-item_text">Каким количеством пар одновременно может торговать бот?</p><img src="./img/button_down.svg" alt=""></div>
-                <div class="questions-items_item"><p class="questions-items-item_text">Сколько стоит BankCoinBot?</p><img src="./img/button_down.svg" alt=""></div>
-                <div class="questions-items_item"><p class="questions-items-item_text">Как я могу приобрести BankCoinBot?</p><img src="./img/button_down.svg" alt=""></div>
-                <div class="questions-items_item"><p class="questions-items-item_text">Могу ли я потерять свой депозит с помощью крипто бота?</p><img src="./img/button_down.svg" alt=""></div>
-                <div class="questions-items_item"><p class="questions-items-item_text">Где я могу получить более подробную информацию по крипто боту?</p><img src="./img/button_down.svg" alt=""></div>
-                <div class="questions-items_item"><p class="questions-items-item_text">Как я могу приобрести BankCoinBot?</p><img src="./img/button_down.svg" alt=""></div>
-                <div class="questions-items_item"><p class="questions-items-item_text">Сколько стоит ежемесячное обслуживание бота?</p><img src="./img/button_down.svg" alt=""></div>
-                <div class="questions-items_item"><p class="questions-items-item_text">Что входит в ежемесячное обслуживание крипто бота?</p><img src="./img/button_down.svg" alt=""></div>
+          <h2>FAQ</h2>
+          <div class="questions_items">
+    
+            <div class="questions-items_item">
+              <div class="questions-items-item_header">
+                <p class="questions-items-item_text">Что такое крипто бот?</p>
+                <img src="./img/button_down.svg">
+              </div>
+              <div class="questions-items-item_answer">
+                Крипто бот – программа в которую заложены алгоритмы на основе искусственного интеллекта для торговли на крипто биржах.
+              </div>
             </div>
+    
+            <div class="questions-items_item">
+              <div class="questions-items-item_header">
+                <p class="questions-items-item_text">На каких биржах торгует BankCoinBot?</p>
+                <img src="./img/button_down.svg">
+              </div>
+              <div class="questions-items-item_answer">
+                Крипто бот торгует на биржах Binance и Bitrex.
+              </div>
+            </div>
+    
+            <div class="questions-items_item">
+              <div class="questions-items-item_header">
+                <p class="questions-items-item_text">Какую доходность я могу получить с помощью крипто бота в месяц?</p>
+                <img src="./img/button_down.svg">
+              </div>
+              <div class="questions-items-item_answer">
+                От 10% до 35% в месяц.
+              </div>
+            </div>
+    
+            <div class="questions-items_item">
+              <div class="questions-items-item_header">
+                <p class="questions-items-item_text">Какими парами торгует крипто бот?</p>
+                <img src="./img/button_down.svg">
+              </div>
+              <div class="questions-items-item_answer">
+                Бот торгует всеми крипто валютными парами, которые есть на крипто бирже.
+              </div>
+            </div>
+    
+            <div class="questions-items_item">
+              <div class="questions-items-item_header">
+                <p class="questions-items-item_text">С каким минимальным депозитом начинает торговать бот?</p>
+                <img src="./img/button_down.svg">
+              </div>
+              <div class="questions-items-item_answer">
+                Бот торгует от 400 USDT или эквивалент в другой крипто валюте.
+              </div>
+            </div>
+    
+            <div class="questions-items_item">
+              <div class="questions-items-item_header">
+                <p class="questions-items-item_text">Каким количеством пар одновременно может торговать бот?</p>
+                <img src="./img/button_down.svg">
+              </div>
+              <div class="questions-items-item_answer">
+                Бот одновременно может торговать с неограниченным количеством пар. На одну пару необходимо иметь минимум 400 USDT или эквивалент другой крипто валюты. Минимальная сумма на одну пару составляет от 400 USDT.
+              </div>
+            </div>
+    
+            <div class="questions-items_item">
+              <div class="questions-items-item_header">
+                <p class="questions-items-item_text">Сколько стоит BankCoinBot?</p>
+                <img src="./img/button_down.svg">
+              </div>
+              <div class="questions-items-item_answer">
+                Стоимость крипто бота составляет 1000 USDT.
+              </div>
+            </div>
+    
+            <div class="questions-items_item">
+              <div class="questions-items-item_header">
+                <p class="questions-items-item_text">Как я могу приобрести BankCoinBot?</p>
+                <img src="./img/button_down.svg">
+              </div>
+              <div class="questions-items-item_answer">
+                Пройдите регистрацию на сайте и оставьте заявку в личном кабинете, мы незамедлительно свяжемся с вами.
+              </div>
+            </div>
+    
+            <div class="questions-items_item">
+              <div class="questions-items-item_header">
+                <p class="questions-items-item_text">Могу ли я потерять свой депозит с помощью крипто бота?</p>
+                <img src="./img/button_down.svg">
+              </div>
+              <div class="questions-items-item_answer">
+                Нет. Бот был протестирован в разные временные промежутки как на росте, так и на крупных падениях. Не было зафиксировано не одного случая потери депозита. Максимум возможно получение минимальной прибыли в месяц.
+              </div>
+            </div>
+    
+            <div class="questions-items_item">
+              <div class="questions-items-item_header">
+                <p class="questions-items-item_text">Где я могу получить более подробную информацию по крипто боту?</p>
+                <img src="./img/button_down.svg">
+              </div>
+              <div class="questions-items-item_answer">
+                Заполните форму обратной связи и наш специалист свяжется с вами.
+              </div>
+            </div>
+    
+            <div class="questions-items_item">
+              <div class="questions-items-item_header">
+                <p class="questions-items-item_text">Сколько стоит ежемесячное обслуживание бота?</p>
+                <img src="./img/button_down.svg">
+              </div>
+              <div class="questions-items-item_answer">
+                Вам необходимо будет оплачивать 20USDT в месяц за обновление и техническую поддержку.
+              </div>
+            </div>
+    
+            <div class="questions-items_item">
+              <div class="questions-items-item_header">
+                <p class="questions-items-item_text">Что входит в ежемесячное обслуживание крипто бота?</p>
+                <img src="./img/button_down.svg">
+              </div>
+              <div class="questions-items-item_answer">
+                Обновление софта, техническая поддержка, помощь в настройке торговых пар и консультации.
+              </div>
+            </div>
+    
+          </div>
+        </div>
     </section>
-
+      
     <section class="contact-form">
         <div class="container">
             <div class="row">
@@ -408,10 +545,10 @@
                                 <input type="number" placeholder="+7 (">
                              <div class="contact-form-left_area">
                                 <textarea name="123" id="" placeholder="Ваше сообщение"></textarea>
-                                <div class="checkbox-container">
-                                    <input type="checkbox">
-                                    <label>Я согласен на <a href="">обработку персональных данных</a></label>
-                                </div>
+                                <label class="checkbox-container">
+                                    <input id="agree" type="checkbox">
+                                    <span>Я согласен на <a href="">обработку персональных данных</a></span>
+                                </label>
                                 <button class="btn btn-border">Отправить</button>
                             </div>
                        </form>
@@ -427,10 +564,10 @@
                             </div>
                             <div class="contact-form-left_area">
                                 <textarea name="123" id="" placeholder="Ваше сообщение"></textarea>
-                                <div class="checkbox-container">
+                                <label class="checkbox-container">
                                     <input type="checkbox">
-                                    <label>Я согласен на <a href="">обработку персональных данных</a></label>
-                                </div>
+                                    <span>Я согласен на <a href="">обработку персональных данных</a></span>
+                                </label>
                                 <button class="btn btn-border">Отправить</button>
                             </div>
                        </form>
@@ -466,6 +603,10 @@
             </div>
         </div>
     </section>
-    
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="../js/slick.min.js"></script>
+    <script src="../js/slider.js"></script>
 </body>
 </html>

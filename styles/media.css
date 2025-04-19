@@ -122,6 +122,11 @@
         width: 100%;
         margin-top: 20px;
     }
+
+    .instructions-wrap_button {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
    
 }
 

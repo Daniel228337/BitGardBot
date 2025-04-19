@@ -1,0 +1,142 @@
+/* Контейнер слайдера */
+.slick-slider {}
+
+/* Обертка, скрывающая лишние части слайдов */
+.slick-list {
+    overflow: hidden;
+}
+
+/* Лента со слайдами */
+.slick-track {
+    display: flex;
+    align-items: flex-start;
+}
+
+/* Отдельный слайд */
+.slick-slide {}
+
+/* Текущий активный слайд */
+.slick-current {}
+
+/* Видимые слайды */
+.slick-active {}
+
+/* Центральный слайд при centerMode: true */
+.slick-center {}
+
+/* Кнопка "назад" */
+.slick-prev {}
+
+/* Кнопка "вперед" */
+.slick-next {}
+
+/* Неактивная кнопка "назад" */
+.slick-prev.slick-disabled {}
+
+/* Неактивная кнопка "вперед" */
+.slick-next.slick-disabled {}
+
+/* Контейнер с точками */
+.slick-dots {}
+
+/* Отдельная точка */
+.slick-dots li {}
+
+/* Кнопка внутри точки */
+.slick-dots li button {}
+
+/* Активная точка */
+.slick-dots li.slick-active button {}
+
+/* Когда слайдер загружен */
+.slick-initialized {}
+
+/* Когда идет загрузка */
+.slick-loading {}
+
+/* Вертикальный режим */
+.slick-vertical {}
+
+/* Дублированные слайды (для бесконечной прокрутки) */
+.slick-slide.slick-cloned {}
+
+
+
+
+
+/* Слайдер */
+.slider {
+    position: relative;
+    min-width: 0;
+    padding: 0 120px;
+}
+
+.slider .slick-arrow {
+    position: absolute;
+    font-size: 0;
+    padding: 0;
+    margin-top: -35px;
+    /* opacity: 60%; */
+    position: absolute;
+    top: 50%;
+    /* padding: 18px 20px; */
+    display: flex;
+    /* background: #3F226194; */
+    /* width: 48px; */
+    /* height: 48px; */
+    border-radius: 50%;
+    margin: auto 0;
+    cursor: pointer;
+    padding: 18px 20px; 
+    background-size: cover;
+    background-position: center;
+    width: 12px;
+    border: none;
+}
+
+.slider .slick-arrow.slick-prev {
+    left: 0;
+    top: 50%;
+    background: url(../img/button_left.svg) 0 0 /100% no-repeat;
+    width: 48px;
+    height: 48px;
+    /* padding: 18px 20px;  */
+}
+
+.slider .slick-arrow.slick-next {
+    top: 50%;
+    right: 0;
+    background: url(../img/button_right.svg) 0 0 /100% no-repeat;
+    width: 48px;
+    height: 48px;
+}
+
+.slider .slick-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.slider .slick-dots li {
+    list-style: none;
+    margin: 0 10px;
+}
+
+.slider .slick-dots button {
+    font-size: 0;
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    opacity: 40%;
+    border-radius: 100%;
+    padding: 0;
+}
+
+.slider .slick-dots li.slick-active button {
+    opacity: 100%;
+}
+
+
+
+
